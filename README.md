@@ -11,9 +11,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Icons pulled from www.svgrepo.com
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+In order for this application to run properly, you need to have a valid
+API_KEY value stored in your .env file
 
 ### `npm start`
 

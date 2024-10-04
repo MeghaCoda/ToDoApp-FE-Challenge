@@ -26,6 +26,10 @@ otherwise I'd declare them in the global file */
     background-color: var(--completed-bg);
 }
 
+.todo-item.completed .left-content {
+    text-decoration: line-through;
+}
+
 .todo-item .checkbox {
     display: inline-block;
     height: var(--left-content-height);
