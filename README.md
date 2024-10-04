@@ -9,7 +9,7 @@ of global variables for ease of standardization and css modules to avoid style a
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is NOT ejected - do so at your own risk!
 
-Icons pulled from www.svgrepo.com
+Icons exported from figma doc
 
 ## Getting Started
 
