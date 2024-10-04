@@ -1,0 +1,14 @@
+@import '../../globals.css';
+
+.main-header {
+    background: var(--headerBgColor);
+    color: var(--font-light-color);
+    font-family: var(--font-family);
+    height: 56px;
+    border: 1px solid var(--black);
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+    padding-left: var(--spacing-lg)
+
+}

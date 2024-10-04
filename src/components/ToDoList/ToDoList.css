@@ -1,0 +1,21 @@
+/* I noticed there was a 17 px gap between the header and the todolist in the designs.
+Normally I'd ask the designer if this was intentional and if 16px was preferred, 
+as typically gaps are multiples of 4 or 8 in order to maintain consistency and to 
+make large and small versions a simpler percentage of the base size.
+In this case I'm assuming the designer meant 16px.
+Likewise the gap listed in the designs is 11px - for the same reason I'm rounding up 
+to 12 px */
+
+/* Additionally I'm choosing to add the base gap between todos here in the list rather than on the to-do 
+items themselves, in case a different gap might be chosen elsewhere if the todos were displayed
+inside another component */
+
+.todo-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 543px;
+    align-self: center;
+    margin-top: var(--spacing-md)
+}

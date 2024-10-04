@@ -1,0 +1,55 @@
+/* I'm assuming the colors in this component aren't going to be shared anywhere else,
+otherwise I'd declare them in the global file */
+.todo-item {
+    --overdue-bg: rgba(255, 0, 0, 0.2);
+    --default-bg: rgba(196, 196, 196, 0.2);
+    --completed-bg: rgba(0, 255, 0, 0.2);
+    --left-content-height: 24px; /* to accommodate the whitespace in the icons */
+    background: var(--default-bg);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    height: 38px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 var(--spacing-xxs) 0 var(--spacing-sm);
+    justify-content: space-between;
+    
+}
+
+.todo-item.overdue {
+        background-color: var(--overdue-bg);
+}
+
+.todo-item.completed {
+    background-color: var(--completed-bg);
+}
+
+.todo-item .checkbox {
+    display: inline-block;
+    height: var(--left-content-height);
+    width: var(--left-content-height);
+    margin-right: calc(var(--spacing-sm) - 4px); /* 4px to account for the whitespace in the icon */
+    margin-left: -4px;
+}
+
+.todo-item .left-content {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    line-height: var(--left-content-height);
+}
+
+.todo-item .left-content-title {
+    text-align: left;
+    width: 100%;
+    line-height: var(--left-content-height);
+}
+
+.todo-item .date-container {
+    height: 28px;
+    border: 1.5px solid var(--black);
+    line-height: 28px;
+    padding: 0 var(--spacing-xs);
+}
