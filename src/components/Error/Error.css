@@ -1,0 +1,9 @@
+.error-message {
+    color: var(--warning);
+    border: 1px solid var(--warning);
+    padding: var(--spacing-md);
+    font-family: var(--font-family);
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
