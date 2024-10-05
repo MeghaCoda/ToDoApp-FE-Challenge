@@ -5,16 +5,16 @@ import Spinner from '../../icons/Spinner/Spinner';
 import Error from '../Error/Error';
 import moment from 'moment';
 
-interface TodoItemData {
+export interface TodoItemData {
     id: string;
     description: string;
     isComplete: boolean;
     dueDate: string | null; // if string this is an ISO date
 }
 
-const sortData = (data: TodoItemData[]): TodoItemData[] => {
+export const sortData = (data: TodoItemData[], dateTime: moment.Moment): TodoItemData[] => {
     return data.sort((a, b) => {
-        const now = moment();
+        const now = dateTime;
     
         // Completed tasks should be placed at the bottom
         if (a.isComplete && !b.isComplete) return 1;
@@ -43,7 +43,7 @@ const ToDoList: React.FC = () => {
     const [data, setData] = useState<TodoItemData[] | null>(null);
 
     const sortAndSetData = (data: TodoItemData[]) => {
-        const sortedData = sortData(data);
+        const sortedData = sortData(data, moment());
         setData(sortedData)
     }
 
