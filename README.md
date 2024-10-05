@@ -14,7 +14,7 @@ Icons exported from figma doc
 ## Getting Started
 
 In order for this application to run properly, you need to have a valid
-API_KEY value stored in your .env file
+REACT_APP_API_KEY value stored in your .env file on your local machine.
 
 ### `npm start`
 
@@ -34,11 +34,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Roadmap / Current bugs
+- Replace the checkbox element in the Todo component with one that both matches designs and is accessibility-friendly. This would require using an input element with a type of checkbox, hiding it, adding a label to point to it and displaying the styled checkbox on top of it, since
+native `<input type="checkbox>` elements can't be styled in a manner consistent with figma.
 
+- Add a test-coverage option. Currently running `npx jest --coverage` incorrectly shows failing tests and `npm test -- --coverage` shows zero coverage. 
 
-## Roadmap
-- Replace the checkbox element in the Todo component with one that both matches designs and is accessibility-friendly. 
+- Once coverage is confirmed ensure test coverage is at or around 80% (this can vary depending on company / team preference but is a good guideline)
